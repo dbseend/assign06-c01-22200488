@@ -20,4 +20,10 @@ public class BookWebController {
         model.addAttribute("books", bookService.findAll());
         return "books/list";
     }
+
+    // GET /books/new : 등록 Form 화면
+    @GetMapping("/books/new")
+    public String form() {
+        return "books/form";
+    }
 }

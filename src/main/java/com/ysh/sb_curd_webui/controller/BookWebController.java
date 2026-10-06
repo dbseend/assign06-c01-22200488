@@ -17,6 +17,12 @@ public class BookWebController {
         this.bookService = bookService;
     }
 
+    // GET / : 루트 접근 시 목록으로 이동
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/books";
+    }
+
     // GET /books : 전체 목록 -> Model("books") -> templates/books/list.html
     @GetMapping("/books")
     public String list(Model model) {

@@ -32,9 +32,8 @@ public class BookWebController {
 
     // POST /books : Form 데이터(name=title,author,price,category,isbn)를 BookRequest로 바인딩
     @PostMapping("/books")
-    public String create(@ModelAttribute BookRequest request, Model model) {
+    public String create(@ModelAttribute BookRequest request) {
         bookService.create(request);
-        model.addAttribute("books", bookService.findAll());
-        return "books/list";
+        return "redirect:/books"; // PRG: Post -> Redirect -> Get (새로고침 시 중복 등록 방지)
     }
 }

@@ -4,7 +4,7 @@
 | :--- | :--- |
 | GitHub (Organization) | https://github.com/2026-2-WebService/assign06-c01-22200488 |
 | GitHub (Personal) | https://github.com/dbseend/assign06-c01-22200488 |
-| 배포 URL (Render) | `TODO: https://assign06-book-web.onrender.com/books` |
+| 배포 URL (Render) | https://assign06-book-web.onrender.com/books |
 
 ---
 

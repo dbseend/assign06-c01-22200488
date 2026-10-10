@@ -1,4 +1,4 @@
-package com.ysh.sb_curd_webui.dto;
+package com.webservice.week06.dto;
 
 public record BookResponse(
         Long id,

@@ -1,4 +1,4 @@
-package com.ysh.sb_curd_webui.domain;
+package com.webservice.week06.domain;
 
 public class Book {
     private Long id;

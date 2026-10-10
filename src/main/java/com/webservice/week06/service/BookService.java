@@ -1,9 +1,9 @@
-package com.ysh.sb_curd_webui.service;
+package com.webservice.week06.service;
 
-import com.ysh.sb_curd_webui.domain.Book;
-import com.ysh.sb_curd_webui.dto.BookRequest;
-import com.ysh.sb_curd_webui.dto.BookResponse;
-import com.ysh.sb_curd_webui.repository.BookRepository;
+import com.webservice.week06.domain.Book;
+import com.webservice.week06.dto.BookRequest;
+import com.webservice.week06.dto.BookResponse;
+import com.webservice.week06.repository.BookRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

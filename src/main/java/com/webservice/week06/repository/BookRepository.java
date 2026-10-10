@@ -1,6 +1,6 @@
-package com.ysh.sb_curd_webui.repository;
+package com.webservice.week06.repository;
 
-import com.ysh.sb_curd_webui.domain.Book;
+import com.webservice.week06.domain.Book;
 import java.util.List;
 import java.util.Optional;
 

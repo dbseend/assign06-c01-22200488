@@ -1,9 +1,9 @@
-package com.ysh.sb_curd_webui.controller;
+package com.webservice.week06.controller;
 
-import com.ysh.sb_curd_webui.service.BookService;
+import com.webservice.week06.service.BookService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import com.ysh.sb_curd_webui.dto.BookRequest;
+import com.webservice.week06.dto.BookRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;

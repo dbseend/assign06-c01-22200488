@@ -1,13 +1,13 @@
-package com.ysh.sb_curd_webui;
+package com.webservice.week06;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SbCurdWebuiApplication {
+public class Week06BookWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SbCurdWebuiApplication.class, args);
+        SpringApplication.run(Week06BookWebApplication.class, args);
     }
 
 }

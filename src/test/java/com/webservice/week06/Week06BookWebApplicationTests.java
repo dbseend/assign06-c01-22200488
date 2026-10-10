@@ -1,10 +1,10 @@
-package com.ysh.sb_curd_webui;
+package com.webservice.week06;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SbCurdWebuiApplicationTests {
+class Week06BookWebApplicationTests {
 
     @Test
     void contextLoads() {

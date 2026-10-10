@@ -1,14 +1,19 @@
-# 웹 서비스 개발 6주차 과제 - Book 관리 Web UI (Spring Boot + Thymeleaf)
+# 웹 서비스 개발 6주차 과제 - 도서 관리 Web UI (Spring Boot + Thymeleaf)
 
-## 1. 프로젝트 소개
+| 구분 | 링크 |
+| :--- | :--- |
+| GitHub (Organization) | https://github.com/2026-2-WebService/assign06-c01-22200488 |
+| GitHub (Personal) | https://github.com/dbseend/assign06-c01-22200488 |
+| 배포 URL (Render) | `TODO: https://assign06-book-web.onrender.com/books` |
+
+---
+
+## ① 프로젝트 소개
 
 ### 프로젝트 주제
 - Spring Boot **Memory 기반 CRUD**(4주차)를 확장하여 **Thymeleaf Web UI + HTML Form**으로 Book을 조회/등록
 - DB 없이 `Map<Long, Book>`(Java Collection)을 저장소로 사용
 - Bootstrap 5로 반응형 UI 적용
-
-### Render 배포 URL
-- 배포 URL: `TODO: https://<service-name>.onrender.com/books`
 
 ### 관리 데이터 (`Book`)
 
@@ -23,18 +28,23 @@
 
 ### 프로젝트 구조
 ```text
-src/main
-├── java/com/ysh/sb_curd_webui
-│   ├── SbCurdWebuiApplication.java
-│   ├── controller/BookWebController.java       # Web 요청 처리, View 이름 반환
-│   ├── service/BookService.java                # 비즈니스 로직, DTO 변환
-│   ├── repository/BookRepository.java          # Repository interface
-│   ├── repository/MemoryBookRepository.java    # Map<Long, Book> 저장소
-│   ├── domain/Book.java
-│   └── dto/BookRequest.java, BookResponse.java
-└── resources
-    ├── templates/books/list.html, form.html    # Thymeleaf
-    └── static/css/style.css
+assign06-c01-22200488
+├── Dockerfile
+├── build.gradle / settings.gradle
+├── images/                                      # 실행 화면 Screenshot
+└── src/main
+    ├── java/com/webservice/week06
+    │   ├── Week06BookWebApplication.java
+    │   ├── controller/BookWebController.java    # Web 요청 처리, View 이름 반환
+    │   ├── service/BookService.java             # 비즈니스 로직, DTO 변환
+    │   ├── repository/BookRepository.java       # Repository interface
+    │   ├── repository/MemoryBookRepository.java # Map<Long, Book> 저장소
+    │   ├── domain/Book.java
+    │   └── dto/BookRequest.java, BookResponse.java
+    └── resources
+        ├── templates/books/list.html, form.html # Thymeleaf
+        ├── static/css/style.css
+        └── application.properties
 ```
 
 ### 실행 방법
@@ -61,10 +71,10 @@ src/main
 
 ---
 
-## 2. 이번 과제 키워드
+## ② 이번 과제 키워드
 `@Controller` · `Thymeleaf` · `Model` · `@ModelAttribute` · `HTML Form` · `redirect:` · `PRG Pattern` · `Bootstrap` · `Layered Architecture`
 
-## 3. 핵심 내용 정리
+## ③ 핵심 내용 정리
 1. **@Controller vs @RestController**: `@RestController`는 반환값을 HTTP Body(JSON)로 쓰고, `@Controller`는 반환 문자열을 **View 이름**으로 해석해 `templates/`의 HTML을 렌더링한다.
 2. **Model → View 전달**: `model.addAttribute("books", ...)`로 담은 데이터를 Thymeleaf가 `${books}`로 읽는다.
 3. **Collection 출력**: `th:each="book : ${books}"`, `th:text="${book.title}"`로 목록을 반복 출력한다.
@@ -73,7 +83,7 @@ src/main
 
 ---
 
-## 4. Weekly Report
+## ④ Weekly Report
 
 ### Key Learning
 1. `@Controller` + `Model` + Thymeleaf로 서버 데이터를 HTML로 렌더링하는 흐름

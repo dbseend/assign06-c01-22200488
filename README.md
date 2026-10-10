@@ -57,7 +57,7 @@ src/main
 
 | 목록 (`GET /books`) | 등록 Form (`GET /books/new`) |
 | :---: | :---: |
-| ![list](docs/screenshots/list.png) | ![form](docs/screenshots/form.png) |
+| ![list](images/list.png) | ![form](images/form.png) |
 
 ---
 

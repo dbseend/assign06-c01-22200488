@@ -48,7 +48,6 @@ src/main
 
 | HTTP Method | URL | 기능 |
 | :--- | :--- | :--- |
-| GET | `/` | `/books`로 redirect |
 | GET | `/books` | 전체 목록 |
 | GET | `/books/new` | 등록 Form |
 | POST | `/books` | 데이터 등록 후 `redirect:/books` |

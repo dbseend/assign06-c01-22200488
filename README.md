@@ -133,7 +133,6 @@ public String create(@ModelAttribute BookRequest request) {
 - **직접 확인/수정**: URL(`/books`, `/books/new`), HTTP Method(GET/POST), `th:action="@{/books}"`, input `name` ↔ `BookRequest` 필드명, Model 변수명 `books`, Thymeleaf 문법(`th:each`, `th:text`, `th:href`)이 Controller와 일치하는지 확인했고, `curl`로 POST → 302 `Location: /books` → 목록 반영까지 검증했다.
 
 ### Reflection
-- `TODO: 새롭게 알게 된 점 또는 궁금한 점 1가지를 직접 작성`
-
+- 기존에 스프링부트 공부 및 활용 경험이 있어서 다 알고 있다고 생각했는데 개념적으로 부족한 부분이 있었고 현재 수업과 과제들을 통해서 그 당시에 내가 막혔던 부분과 모호하다고 생각했던 부분을 다시 공부하고 이전에 했던 프로젝트 경험을 더욱 가치있게 만들고 있다고 생각합니다.
 ### 건의사항
-- `TODO`
+- 없습니다.

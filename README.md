@@ -65,9 +65,21 @@ assign06-c01-22200488
 
 ### 주요 화면
 
-| 목록 (`GET /books`) | 등록 Form (`GET /books/new`) |
-| :---: | :---: |
-| ![list](images/list.png) | ![form](images/form.png) |
+**① 초기 목록 (`GET /books`) — 데이터 없음**
+
+![list-empty](images/01-list-empty.png)
+
+**② 등록 Form (`GET /books/new`) — 입력**
+
+![form](images/02-form.png)
+
+**③ 등록 후 목록 (`POST /books` → `redirect:/books`) — 1건**
+
+![list-one](images/03-list-one.png)
+
+**④ 추가 등록 후 목록 — 2건**
+
+![list-two](images/04-list-two.png)
 
 ---
 
